@@ -1,0 +1,6 @@
+{
+	 "Username":"yourname@gmail.com"
+	,"Password":"yourpassword"
+	,"EmailServer":"smtp.gmail.com"
+	,"Port":587
+}
