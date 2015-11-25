@@ -251,6 +251,7 @@ func (this *EM) SendIt() (err error) {
 		this.Err = err
 	}
 
+	this.Message = mailbuilder.NewMessage()
 	return
 }
 
