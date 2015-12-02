@@ -25,7 +25,6 @@ package em
 import (
 	"bytes"
 	"encoding/base64"
-	"encoding/json"
 	"errors"
 	"fmt"
 	"io/ioutil"
@@ -34,6 +33,7 @@ import (
 	"path/filepath"
 	"strconv"
 
+	"github.com/pschlump/json"       //	"encoding/json"
 	"github.com/zerobfd/mailbuilder" // "../mailbuilder"
 
 	ms "github.com/pschlump/templatestrings" // "../ms"
@@ -252,6 +252,7 @@ func (this *EM) SendIt() (err error) {
 	}
 
 	this.Message = mailbuilder.NewMessage()
+
 	return
 }
 
